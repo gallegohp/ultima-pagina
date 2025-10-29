@@ -8,7 +8,6 @@
     }
 
     body {
-    font-family: 'Montserrat', sans-serif;
     background-color: #1a1a1a;
     color: #ffffff;
     }
@@ -33,7 +32,8 @@
 
     /* Sección principal */
     .principal {
-    background: url("/assets/img/images/background.png") no-repeat center center / cover;
+    background-image: url(../assets/img/images/background.png);
+    background-position: center right;
     height: 700px;
     display: flex;
     align-items: center;
@@ -46,7 +46,6 @@
 
     .texto-principal h1 {
     font-size: 60px;
-    font-family: 'Oswald', sans-serif;
     }
 
     .texto-principal p {
@@ -74,13 +73,11 @@
     }
 
     .gira-baile h2 {
-    font-family: 'Oswald', sans-serif;
     font-size: 40px;
     margin-bottom: 15px;
     }
 
     .gira-baile p {
-    font-family: 'Montserrat', sans-serif;
     max-width: 700px;
     margin: 0 auto 30px;
     }
@@ -105,12 +102,10 @@
     }
 
     .tarjeta h3 {
-    font-family: 'Oswald', sans-serif;
     margin: 10px 0;
     font-size: 20px;
     }
 
-    /* Sección de precios */
     .precios {
     background-color: #222;
     text-align: center;
@@ -118,13 +113,11 @@
     }
 
     .precios h2 {
-    font-family: 'Oswald', sans-serif;
     font-size: 40px;
     margin-bottom: 15px;
     }
 
     .precios p {
-    font-family: 'Montserrat', sans-serif;
     max-width: 700px;
     margin: 0 auto 30px;
     }
@@ -159,7 +152,6 @@
     border-radius: 3px;
     }
 
-    /* Pie de página */
     .pie {
     background-color: #ff5500;
     text-align: center;
@@ -167,3 +159,71 @@
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     }
+
+
+@media (max-width:1279px){
+	
+
+}
+
+@media (max-width:920px){
+	nav ul{
+		background-color: crimson;
+	}
+
+	#video{
+		width: 200px;
+		height: auto;
+	}
+
+}
+
+@media (max-width:768px){
+    body{
+        font-size: 14px;
+    }
+    .contenedor{
+        padding: 0 10px;
+    }
+    .contenido-barra{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-barra img{
+        width: 30px;
+    }
+    .contenido-barra .logo{
+        margin-bottom: 10px;
+    }
+    .contenido-barra .logo img{
+        width: 100px;
+    }
+    .contenido-barra .logo{
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px){
+    body{
+        font-size: 14px;
+    }
+    .contenedor{
+        padding: 0 10px;
+    }
+    .contenido-barra{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenido-barra img{
+        width: 30px;
+    }
+    .contenido-barra .logo{
+        margin-bottom: 10px;
+    }
+    .contenido-barra .logo img{
+        width: 100px;
+    }
+    .contenido-barra .logo{
+        margin-bottom: 10px;
+    }
+}
